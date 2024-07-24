@@ -1,307 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="Portfolio.css">
-<style>body{
-
-    background-color: rgb(90, 116, 118)
-}
-
-header {
-    background-color: rgba(36, 45, 46, 0.596);
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    text-align: right;
-}
-.para1{
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: aliceblue;
-    padding: 20px;
-}
-.heading{
-    color: aliceblue;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.heading2{
-    color: aliceblue;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: Verdana Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-}
-
-section {
-    padding: 2rem;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 2rem;
-}
-
-.project, .skill-item {
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 1rem;
-    margin: 1rem;
-    width: 30%;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(240, 255, 255, 0.247);
-
-}
-.project, .skill-item1 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(240, 255, 255, 0.247);
-}
-.project, .skill-item2 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(255, 124, 1, 0.541);
-}
-.project, .skill-item3 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(13, 185, 247, 0.377);
-}
-
-.project, .skill-item4 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(240, 236, 10, 0.644)
-}
-
-.project, .skill-item5 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(87, 35, 146, 0.452)
-}
-.project, .skill-item6 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(3, 43, 3, 0.514)
-}
-.project, .skill-item7 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(2, 44, 28, 0.664)
-}
-.project, .skill-item8 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgb(4, 46, 70)
-}
-.project, .skill-item9 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgba(190, 13, 66, 0.774)
-}
-.project, .skill-item10 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgba(36, 45, 46, 0.596)
-}
-
-.project, .skill-item11 {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem;
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: rgba(165, 155, 10, 0.712)
-}
-
-footer {
-    background-color: #461b1ba9;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-</style>
-</head>
-<body >
-    <div>
-    <header>
-         <h4 style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">My Portfolio</h4>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <div class="flex-container">
-            <img src="WhatsApp Image 2024-07-20 at 5.33.20 PM.jpeg" alt="Your Photo" class="profile-pic">
-            <p class="para1">Hello! I'm Jameel Ahamed,A passionate college student specializing in frontend development and Ui/Ux Designer. With skills in HTML, CSS, JavaScript,Figma and frameworks like React, I aspire to create engaging and user-friendly web experiences.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h1 class="heading" style="text-align: center;">Projects</h1>
-        <div class="flex-container">
-            <div class="skill-item">
-                <h2 class="heading">Calculator</h2>
-                <p class="heading2">Creating a calculator using HTML, CSS, and JavaScript is a great project for honing web development skills.This project involves building a simple, yet functional, web-based calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
-            </div>
-            <div class="skill-item">
-                <h2 class="heading">Login page</h2>
-                <p class="heading2">Responsive Design: Ensures a seamless user experience on any device.
-                <p class="heading2">Input Validation: Enhances security by validating username and password inputs.</p>
-                <p class="heading2"> Hashing: Demonstrates client-side hashing.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <input type="text" placeholder="0" id="output-Screen">
+                <button onclick="clear()">C</button>
+                <button onclick="del()">Del</button>
+                <button onclick="display('%')">%</button>
+                <button onclick="display('/')">/</button>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('*')">*</button>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('-')">-</button>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('+')">+</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="Calculate()" class="equal">=</button>
             </div>
         </div>
-    </section>
+        <script>
+            let outputScreen = document.getElementById("output-Screen");
 
-    <section id="skills">
-        <h1 class="heading" style="text-align: center;">Skills</h1>
-        <div class="flex-container">
-            <div class="skill-item2">
-                <h4 class="heading2">HTML</h4>
-            </div>
-            <div class="skill-item3">
-                <h4 class="heading2">CSS</h4>
-            </div>
-            <div class="skill-item4">
-                <h4 class="heading2">JavaScript</h4>
-            </div>
-            <div class="skill-item6">
-                <h4 class="heading2">MS-Excel</h4>
-            </div>
-            <div class="skill-item7">
-                <h4 class="heading2">DBMS(MongoDB)</h4>
-            </div>
-            <div class="skill-item11">
-                <h4 class="heading2">Python</h4>
-            </div>
-            <div class="skill-item11">
-                <h4 class="heading2">Figma</h4>
-            </div>
-            <div class="skill-item11">
-                <h4 class="heading2">Adobe XD</h4>
-            </div>
-        </div>
-    </section>
-</div>
-
-    <section id="contact">
-        <h1 class="heading" style="text-align: center;">Contact</h1>
-        <div class="flex-container">
-        <div class="skill-item8">
-        <h4 class="heading2">LinkedIn:<a href="https://www.linkedin.com/in/jameel-ahamed-j-4469b4257" target="_blank">click</a></h4>
-        </div>
-        <div class="skill-item9">
-        <h4 class="heading2">Instagram:<a href="https://www.instagram.com/jameel__ahamed__j?utm_source=qr&igsh=aTBwOHRobjU1aGpi" target="_blank">click</a></h4>
-        </div>
-        <div class="skill-item10">
-            <h4 class="heading2">Github:<a href="https://github.com/jameelahamedj2004" target="_blank">click</a></h4>
-        </div>
-    </div>
-    </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <footer>
-        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">&copy; 2024 Jameel Ahamed. All rights reserved.</p>
-    </footer>
+            function display(num){
+                outputScreen.value += num;
+            }
+            function Calculate(){
+                try{
+                    outputScreen.value = eval(outputScreen.value);
+                }
+                catch(err){
+                    alert("Invalid")
+                }            
+            }
+            function clear(){
+                outputScreen.value = "";
+            }
+            function del(){
+                outputScreen.value = outputScreen.value.slice(0,-1);
+            }
+        </script>    
     </body>
-</body>
 </html>
