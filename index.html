@@ -2,55 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Login </title>
         <link rel="stylesheet" href="style.css">
-        <title>calculator</title>
     </head>
     <body>
-        <div class="container">
-            <div class="calculator">
-                <input type="text" placeholder="0" id="output-Screen">
-                <button onclick="clear()">C</button>
-                <button onclick="del()">Del</button>
-                <button onclick="display('%')">%</button>
-                <button onclick="display('/')">/</button>
-                <button onclick="display('7')">7</button>
-                <button onclick="display('8')">8</button>
-                <button onclick="display('9')">9</button>
-                <button onclick="display('*')">*</button>
-                <button onclick="display('4')">4</button>
-                <button onclick="display('5')">5</button>
-                <button onclick="display('6')">6</button>
-                <button onclick="display('-')">-</button>
-                <button onclick="display('1')">1</button>
-                <button onclick="display('2')">2</button>
-                <button onclick="display('3')">3</button>
-                <button onclick="display('+')">+</button>
-                <button onclick="display('.')">.</button>
-                <button onclick="display('0')">0</button>
-                <button onclick="Calculate()" class="equal">=</button>
-            </div>
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="sighnup_link">
+                    Not a member? <a href="#">Signup</a>
+                </div>
+            </form>
         </div>
-        <script>
-            let outputScreen = document.getElementById("output-Screen");
-
-            function display(num){
-                outputScreen.value += num;
-            }
-            function Calculate(){
-                try{
-                    outputScreen.value = eval(outputScreen.value);
-                }
-                catch(err){
-                    alert("Invalid")
-                }            
-            }
-            function clear(){
-                outputScreen.value = "";
-            }
-            function del(){
-                outputScreen.value = outputScreen.value.slice(0,-1);
-            }
-        </script>    
     </body>
 </html>
